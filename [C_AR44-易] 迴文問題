@@ -1,0 +1,25 @@
+#include<iostream>  
+using namespace std;
+#include<cstring> 
+  
+  
+  
+int main(void){  
+  
+    char a[100];  
+    cin >> a;  
+    int len = strlen(a);  
+    int d = 1;  
+  
+    for (int i = 0; i <= len / 2; i++){  
+        if (a[i] != a[len - 1 - i]){  
+            cout << "NO\n";  
+            d = 0;  
+            break;  
+        }  
+    }  
+  
+    if (d) cout << "YES\n";  
+  
+    return 0;  
+}
